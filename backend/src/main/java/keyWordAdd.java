@@ -16,9 +16,9 @@ public class keyWordAdd extends HttpServlet {
 
         response.setContentType("text/html;charset=utf-8");
         request.setCharacterEncoding("utf-8");
-        String JDBC_URL = "jdbc:mysql://124.222.87.124:3306/bianyi?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true";
-        String JDBC_USER = "BianYi";
-        String JDBC_PASSWORD = "TD5KHXf37sKJcW8L";
+        String JDBC_URL = "jdbc:mysql://xxxx:3306/bianyi?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true";
+        String JDBC_USER = "xxxx";
+        String JDBC_PASSWORD = "xxx";
         try (Connection conn = DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASSWORD)) {
             try (PreparedStatement ps = conn.prepareStatement(
                     "INSERT INTO keyWord (keyWordName) VALUES (?)")) {
